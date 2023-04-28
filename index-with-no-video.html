@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>KEYGEM - Mechanical Keyboard Store</title>
+    <link rel="icon" href="logos/main-logo.png" type="image/icon type" />
+    <link rel="stylesheet" href="css/main-page/general.css" />
+    <link rel="stylesheet" href="css/main-page/header.css" />
+    <link rel="stylesheet" href="css/main-page/body.css" />
+    <link rel="stylesheet" href="css/main-page/footer.css" />
+    <script type="text/javascript" src="javascript/jquery-3.6.4.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div
+      id="cart-background"
+      class="cart-background"
+      onclick="closeCartNav(), closeSearchNav(), closeMenu()"
+    ></div>
+    <div id="search-nav" class="search-nav">
+      <img src="logos/search-icon.PNG" class="search-icon" />
+      <input type="text" class="search-input" placeholder="SEARCH..." />
+      <button class="close-button" onclick="closeSearchNav()">
+        <img src="logos/x-2.PNG" class="close-icon" />
+      </button>
+    </div>
+    <div id="cart-nav" class="cart-nav">
+      <div class="cart-header">
+        <div class="cart-text-1">CART</div>
+        <button class="cart-close" onclick="closeCartNav()">
+          <img src="logos/x.png" class="close-image" />
+        </button>
+      </div>
+      <div class="cart-body"></div>
+      <div class="cart-footer">
+        <div class="add-order-note">Add Order Note</div>
+        <div class="shipping-info">Shipping & taxes calculated at checkout</div>
+        <button class="custom-button">CHECKOUT &#8226; $ 0</button>
+      </div>
+    </div>
+    <div class="announcement-bar">
+      <a href="index.html" class="announcement-text"
+        >THE CURRENT UK ORDER MINIMUM IS 160 EURO.</a
+      >
+    </div>
+    <div class="slideshow">
+      <img src="logos/banner.png" class="banner" />
+      <div id="header" class="header">
+        <div class="left-section">
+          <div class="menu">
+            <a href="index.html">HOME</a>
+            <div class="line">
+              <div class="line-animation"></div>
+            </div>
+          </div>
+          <div class="shop-menu">
+            SHOP
+            <div class="menu-invisibleline"></div>
+            <div class="shop-menu-container">
+              <div class="menu-item">
+                <a href="all-product-page1.html">All Products</a>
+              </div>
+              <div class="menu-item">SALE</div>
+              <div class="menu-item">Group-Buys</div>
+              <div class="menu-item-keyboard">
+                Keyboards
+                <div class="keyboard-invisibleline"></div>
+                <div class="arrow">
+                  <img src="logos/pngwing.com.png" class="arrow-image" />
+                </div>
+                <div class="keyboard-menu">
+                  <div class="menu-item">Keychron</div>
+                  <div class="menu-item">IDOBAO</div>
+                  <div class="menu-item">Ducky</div>
+                  <div class="menu-item">Glorious</div>
+                </div>
+              </div>
+              <div class="menu-item">Keycap Sets</div>
+              <div class="menu-item-switch">
+                Switches
+                <div class="keyboard-invisibleline"></div>
+                <div class="arrow">
+                  <img src="logos/pngwing.com.png" class="arrow-image" />
+                </div>
+                <div class="switch-menu">
+                  <div class="menu-item">Linear</div>
+                  <div class="menu-item">Tactile</div>
+                  <div class="menu-item">Silent</div>
+                  <div class="menu-item">Clicky</div>
+                  <div class="menu-item">Switch Testers</div>
+                  <div class="menu-item">Gazzew</div>
+                  <div class="menu-item">Gateron</div>
+                  <div class="menu-item">Kailh</div>
+                  <div class="menu-item">JWK</div>
+                  <div class="menu-item">SP-Star</div>
+                  <div class="menu-item">Tecsee</div>
+                  <div class="menu-item">CHERRY</div>
+                </div>
+              </div>
+              <div class="menu-item">Stabilizer</div>
+              <div class="menu-item-spring">
+                Springs
+                <div class="keyboard-invisibleline"></div>
+                <div class="arrow">
+                  <img src="logos/pngwing.com.png" class="arrow-image" />
+                </div>
+                <div class="spring-menu">
+                  <div class="menu-item">SPRiT</div>
+                  <div class="menu-item">TX</div>
+                </div>
+              </div>
+              <div class="menu-item">Lubricants</div>
+              <div class="menu-item">Switch Films</div>
+              <div class="menu-item">Cables</div>
+              <div class="menu-item">Wrist Rest</div>
+              <div class="menu-item">Tools</div>
+              <div class="menu-item">Accessories</div>
+              <div class="menu-item">Merchandise</div>
+            </div>
+          </div>
+          <div class="info-menu">
+            INFO
+            <div class="menu-invisibleline"></div>
+            <div class="info-menu-container">
+              <div class="menu-item">News</div>
+              <div class="menu-item">Group-Buys Updates</div>
+              <div class="menu-item">Carrer</div>
+              <div class="menu-item">
+                <a href="shipping-policy.html">Shipping Policy</a>
+              </div>
+              <div class="menu-item">FAQ</div>
+              <div class="menu-item">Contact Us</div>
+            </div>
+          </div>
+          <div class="mini-menu">
+            <i
+              class="fa-solid fa-bars"
+              style="color: #e5e3db"
+              onclick="openMenu()"
+            ></i>
+            <div class="mini-menu-container" id="mini-menu-container">
+              <div class="mini-menu-header">
+                <img
+                  src="logos/close-icon-2.PNG"
+                  class="close-icon-2"
+                  onclick="closeMenu()"
+                />
+              </div>
+              <div class="mini-menu-body">
+                <a href="index.html">
+                  <div class="mini-menu-item">HOME</div>
+                </a>
+                <a href="all-product-page1.html"
+                  ><div class="mini-menu-item">ALL PRODUCTS</div></a
+                >
+                <div class="mini-menu-item">INFO</div>
+                <div class="mini-menu-account">Account</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="middle-section">
+          <a href="index.html"
+            ><img src="logos/logo.avif" class="main-logo"
+          /></a>
+        </div>
+        <div class="right-section">
+          <img src="logos/discord-logo.png" class="discord-logo" />
+          <div class="menu">ACCOUNT</div>
+          <div class="menu" onclick="openSearchNav()">SEARCH</div>
+          <div class="menu-cart" onclick="openCartNav()">CART (0)</div>
+          <div class="mini-search" onclick="openSearchNav()">
+            <i class="fa-solid fa-magnifying-glass" style="color: #e5e3db"></i>
+          </div>
+          <div class="mini-cart" onclick="openCartNav()">
+            <i class="fa-solid fa-cart-shopping" style="color: #e5e3db"></i>
+          </div>
+        </div>
+      </div>
+      <div class="banner-info">
+        <div class="banner-info-text">OPUS 1 KEYBOARD KIT</div>
+        <div class="banner-info-button-container">
+          <button class="banner-info-button">JOIN NOW</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-body">
+      <div class="featured-collection">
+        <div class="featured-collection-label">FEATURED COLLECTION</div>
+        <div class="featured-collection-option">
+          <div class="option-1" onclick="newFocus()">
+            NEW
+            <div class="option-line"></div>
+            <div class="option-line-animation option-active"></div>
+          </div>
+          <div class="option-2" onclick="bestSellerFocus()">
+            BESTSELLER
+            <div class="option-line"></div>
+            <div class="option-line-animation"></div>
+          </div>
+        </div>
+        <div class="featured-collection-container" id="fcc">
+          <div class="featured-collection-grid" id="fcg">
+            <div class="featured-item">
+              <div>
+                <a href="products.html"
+                  ><img
+                    src="logos/featured-item-1.png"
+                    class="featured-item-photo"
+                /></a>
+              </div>
+              <div class="featured-item-info-container">
+                <div class="featured-item-info">
+                  <a href="products.html">CLEAR 2048 PURPLE KEYCAP SET</a>
+                </div>
+                <div class="price">$ 60</div>
+              </div>
+            </div>
+            <div class="featured-item">
+              <div>
+                <img
+                  src="logos/featured-item-2.png"
+                  class="featured-item-photo"
+                />
+              </div>
+              <div class="featured-item-info-container">
+                <div class="featured-item-info">
+                  KEYCHRON BLACK TRANSPARENT OSA KEYCAPS
+                </div>
+                <div class="price">$ 25</div>
+              </div>
+            </div>
+            <div class="featured-item">
+              <div>
+                <img
+                  src="logos/featured-item-3.png"
+                  class="featured-item-photo"
+                />
+              </div>
+              <div class="featured-item-info-container">
+                <div class="featured-item-info">
+                  KEYCHRON PBT PLAYER KEYCAPS
+                </div>
+                <div class="price">$ 44,99</div>
+              </div>
+            </div>
+            <div class="featured-item">
+              <div>
+                <img
+                  src="logos/featured-item-4.png"
+                  class="featured-item-photo"
+                />
+              </div>
+              <div class="featured-item-info-container">
+                <div class="featured-item-info">
+                  KEYCHRON PBT DOLCH BLUE KEYCAPS
+                </div>
+                <div class="price">$ 44,99</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="featured-collection-grid grid-hidden" id="fcg">
+            <div class="featured-item">
+              <div>
+                <img
+                  src="logos/bestseller-item-1.png"
+                  class="featured-item-photo"
+                />
+              </div>
+              <div class="featured-item-info-container">
+                <div class="featured-item-info">
+                  DUROCK SCREW-IN STABILIZER V2
+                </div>
+                <div class="price">FROM $ 5</div>
+              </div>
+            </div>
+            <div class="featured-item">
+              <div>
+                <img
+                  src="logos/bestseller-item-2.png"
+                  class="featured-item-photo"
+                />
+              </div>
+              <div class="featured-item-info-container">
+                <div class="featured-item-info">
+                  GPL 205 GRADE 0 - GLASS CONTAINER - 5ML
+                </div>
+                <div class="price">$ 13,99</div>
+              </div>
+            </div>
+            <div class="featured-item">
+              <div>
+                <img
+                  src="logos/bestseller-item-3.png"
+                  class="featured-item-photo"
+                />
+              </div>
+              <div class="featured-item-info-container">
+                <div class="featured-item-info">
+                  KRYTOX GPL 205 GRADE 0 - TUBE
+                </div>
+                <div class="price">$ 13,99</div>
+              </div>
+            </div>
+            <div class="featured-item">
+              <div>
+                <img
+                  src="logos/bestseller-item-4.png"
+                  class="featured-item-photo"
+                />
+              </div>
+              <div class="featured-item-info-container">
+                <div class="featured-item-info">TX - SWITCH FILMS</div>
+                <div class="price">$ 6,50</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-row">
+          <a href="all-product-page1.html"
+            ><button class="custom-button">VIEW ALL PRODUCTS</button></a
+          >
+        </div>
+      </div>
+
+      <div class="catagories">
+        <div class="catagory-item">
+          <div class="catagory-image-container">
+            <div class="blur"></div>
+            <img src="logos/catagory-1.png" class="catagory-image" />
+            <div class="catagory-info">
+              <div class="catagory-info-name">SWITCHES</div>
+              <button class="custom-button">VIEW PRODUCTS</button>
+            </div>
+          </div>
+        </div>
+        <div class="catagorie-item">
+          <div class="catagory-image-container">
+            <div class="blur"></div>
+            <img src="logos/catagory-2.png" class="catagory-image" />
+            <div class="catagory-info">
+              <div class="catagory-info-name">KEYCAPS</div>
+              <button class="custom-button">VIEW PRODUCTS</button>
+            </div>
+          </div>
+        </div>
+        <div class="catagorie-item">
+          <div class="catagory-image-container">
+            <div class="blur"></div>
+            <img src="logos/catagory-3.png" class="catagory-image" />
+            <div class="catagory-info">
+              <div class="catagory-info-name">KEYBOARDS</div>
+              <button class="custom-button">VIEW PRODUCTS</button>
+            </div>
+          </div>
+        </div>
+        <div class="catagorie-item">
+          <div class="catagory-image-container">
+            <div class="blur"></div>
+            <img src="logos/catagory-4.png" class="catagory-image" />
+            <div class="catagory-info">
+              <div class="catagory-info-name">TOOLS</div>
+              <button class="custom-button">VIEW PRODUCTS</button>
+            </div>
+          </div>
+        </div>
+        <div class="catagorie-item">
+          <div class="catagory-image-container">
+            <div class="blur"></div>
+            <img src="logos/catagory-5.png" class="catagory-image" />
+            <div class="catagory-info">
+              <div class="catagory-info-name">DESKMATS</div>
+              <button class="custom-button">VIEW PRODUCTS</button>
+            </div>
+          </div>
+        </div>
+        <div class="catagorie-item">
+          <div class="catagory-image-container">
+            <div class="blur"></div>
+            <img src="logos/catagory-6.png" class="catagory-image" />
+            <div class="catagory-info">
+              <div class="catagory-info-name">MERCHANDISES</div>
+              <button class="custom-button">VIEW PRODUCTS</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="newsletter">
+      <img src="logos/newsletter.png" class="newsletter-logo" />
+      <div class="newsletter-info">
+        <div class="newsletter-info-text-1">KEEB UPDATED</div>
+        <div class="newsletter-info-text-2">NEWSLETTER</div>
+        <div class="newsletter-info-text-3">
+          Subscribe to our newsletter to be always up do date.
+        </div>
+        <div class="input-container">
+          <input
+            type="text"
+            placeholder="Enter your email"
+            class="newsletter-input"
+          />
+          <button class="custom-button">SUBSCRIBE</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-item-container">
+        <div class="footer-menu">
+          <div class="footer-menu-header-text">FOOTER MENU</div>
+          <div class="footer-menu-body-text">Legal Notice</div>
+          <div class="footer-menu-body-text">Privacy Policy</div>
+          <div class="footer-menu-body-text">Refund policy</div>
+          <div class="footer-menu-body-text">Terms of Service</div>
+          <div class="footer-menu-body-text">Shipping Policy</div>
+        </div>
+        <div class="reviews">
+          <div class="footer-menu-header-text">REVIEWS</div>
+          <div class="footer-menu-body-text">Trustpilot</div>
+          <div class="footer-menu-body-text">Google</div>
+        </div>
+        <div class="social-media">
+          <div class="footer-menu-header-text">SOCIAL MEDIA</div>
+          <div class="footer-menu-body-text">Join our Discord Community!</div>
+          <div class="social-media-item">
+            <img src="logos/facebook-logo.PNG.png" class="facebook-logo" />
+            <img src="logos/twitter-logo.PNG" class="twitter-logo" />
+            <img src="logos/insta-logo.PNG" class="insta-logo" />
+          </div>
+        </div>
+        <div class="newsletter-section">
+          <div class="footer-menu-header-text">NEWSLETTER</div>
+          <div class="footer-menu-body-text">
+            Subscribe to our newsletter to be always up to date
+          </div>
+          <div>
+            <input
+              type="text"
+              class="email-input"
+              placeholder="Enter your email address"
+            />
+          </div>
+          <button class="custom-button">SUBSCRIBE</button>
+        </div>
+      </div>
+      <div class="footer-menu-trademark">© KEYGEM 2020-2023</div>
+      <div class="payment-container">
+        <img src="logos/payment.png" class="payment-method" />
+      </div>
+    </div>
+    <script type="text/javascript" src="javascript/general-js.js"></script>
+    <script type="text/javascript" src="javascript/shopping-cart.js"></script>
+  </body>
+</html>

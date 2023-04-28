@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CLEAR 2048 PURPLE KEYCAPS SET - KEYGEM</title>
+    <link rel="icon" href="logos/main-logo.png" type="image/icon type" />
+    <link rel="stylesheet" href="css/product/products-header.css" />
+    <link rel="stylesheet" href="css/product/products-general.css" />
+    <link rel="stylesheet" href="css/product/products-footer.css" />
+    <link rel="stylesheet" href="css/product/products-body.css" />
+    <script type="text/javascript" src="javascript/jquery-3.6.4.js"></script>
+    <script src="javascript/product.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div
+      id="cart-background"
+      class="cart-background"
+      onclick="closeCartNav(), closeSearchNav(), closeMenu()"
+    ></div>
+    <div id="search-nav" class="search-nav">
+      <img src="logos/search-icon.PNG" class="search-icon" />
+      <input type="text" class="search-input" placeholder="SEARCH..." />
+      <button class="close-button" onclick="closeSearchNav()">
+        <img src="logos/x-2.PNG" class="close-icon" />
+      </button>
+    </div>
+    <div id="cart-nav" class="cart-nav">
+      <div class="cart-header">
+        <div class="cart-text-1">CART</div>
+        <button class="cart-close" onclick="closeCartNav()">
+          <img src="logos/x.png" class="close-image" />
+        </button>
+      </div>
+      <div class="cart-body"></div>
+      <div class="cart-footer">
+        <div class="add-order-note">Add Order Note</div>
+        <div class="shipping-info">Shipping & taxes calculated at checkout</div>
+        <button class="custom-button">CHECKOUT &#8226; $ 0</button>
+      </div>
+    </div>
+    <div class="announcement-bar">
+      <a href="index.html" class="announcement-text"
+        >THE CURRENT UK ORDER MINIMUM IS 160 EURO.</a
+      >
+    </div>
+    <div class="top-header">
+      <div id="header" class="header">
+        <div class="left-section">
+          <div class="menu">
+            <a href="index.html">HOME</a>
+            <div class="line">
+              <div class="line-animation"></div>
+            </div>
+          </div>
+          <div class="shop-menu">
+            SHOP
+            <div class="menu-invisibleline"></div>
+            <div class="shop-menu-container">
+              <div class="menu-item">
+                <a href="all-product-page1.html">All Products</a>
+              </div>
+              <div class="menu-item">SALE</div>
+              <div class="menu-item">Group-Buys</div>
+              <div class="menu-item-keyboard">
+                Keyboards
+                <div class="keyboard-invisibleline"></div>
+                <div class="arrow">
+                  <img src="logos/pngwing.com.png" class="arrow-image" />
+                </div>
+                <div class="keyboard-menu">
+                  <div class="menu-item">Keychron</div>
+                  <div class="menu-item">IDOBAO</div>
+                  <div class="menu-item">Ducky</div>
+                  <div class="menu-item">Glorious</div>
+                </div>
+              </div>
+              <div class="menu-item">Keycap Sets</div>
+              <div class="menu-item-switch">
+                Switches
+                <div class="keyboard-invisibleline"></div>
+                <div class="arrow">
+                  <img src="logos/pngwing.com.png" class="arrow-image" />
+                </div>
+                <div class="switch-menu">
+                  <div class="menu-item">Linear</div>
+                  <div class="menu-item">Tactile</div>
+                  <div class="menu-item">Silent</div>
+                  <div class="menu-item">Clicky</div>
+                  <div class="menu-item">Switch Testers</div>
+                  <div class="menu-item">Gazzew</div>
+                  <div class="menu-item">Gateron</div>
+                  <div class="menu-item">Kailh</div>
+                  <div class="menu-item">JWK</div>
+                  <div class="menu-item">SP-Star</div>
+                  <div class="menu-item">Tecsee</div>
+                  <div class="menu-item">CHERRY</div>
+                </div>
+              </div>
+              <div class="menu-item">Stabilizer</div>
+              <div class="menu-item-spring">
+                Springs
+                <div class="keyboard-invisibleline"></div>
+                <div class="arrow">
+                  <img src="logos/pngwing.com.png" class="arrow-image" />
+                </div>
+                <div class="spring-menu">
+                  <div class="menu-item">SPRiT</div>
+                  <div class="menu-item">TX</div>
+                </div>
+              </div>
+              <div class="menu-item">Lubricants</div>
+              <div class="menu-item">Switch Films</div>
+              <div class="menu-item">Cables</div>
+              <div class="menu-item">Wrist Rest</div>
+              <div class="menu-item">Tools</div>
+              <div class="menu-item">Accessories</div>
+              <div class="menu-item">Merchandise</div>
+            </div>
+          </div>
+          <div class="info-menu">
+            INFO
+            <div class="menu-invisibleline"></div>
+            <div class="info-menu-container">
+              <div class="menu-item">News</div>
+              <div class="menu-item">Group-Buys Updates</div>
+              <div class="menu-item">Carrer</div>
+              <div class="menu-item">
+                <a href="shipping-policy.html">Shipping Policy</a>
+              </div>
+              <div class="menu-item">FAQ</div>
+              <div class="menu-item">Contact Us</div>
+            </div>
+          </div>
+          <div class="mini-menu">
+            <i
+              class="fa-solid fa-bars"
+              style="color: #e5e3db"
+              onclick="openMenu()"
+            ></i>
+            <div class="mini-menu-container" id="mini-menu-container">
+              <div class="mini-menu-header">
+                <img
+                  src="logos/close-icon-2.PNG"
+                  class="close-icon-2"
+                  onclick="closeMenu()"
+                />
+              </div>
+              <div class="mini-menu-body">
+                <a href="index.html">
+                  <div class="mini-menu-item">HOME</div>
+                </a>
+                <a href="all-product-page1.html"
+                  ><div class="mini-menu-item">ALL PRODUCTS</div></a
+                >
+                <div class="mini-menu-item">INFO</div>
+                <div class="mini-menu-account">Account</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="middle-section">
+          <a href="index.html"
+            ><img src="logos/logo.avif" class="main-logo"
+          /></a>
+        </div>
+        <div class="right-section">
+          <img src="logos/discord-logo.png" class="discord-logo" />
+          <div class="menu">ACCOUNT</div>
+          <div class="menu" onclick="openSearchNav()">SEARCH</div>
+          <div class="menu-cart" onclick="openCartNav()">CART (0)</div>
+          <div class="mini-search" onclick="openSearchNav()">
+            <i class="fa-solid fa-magnifying-glass" style="color: #e5e3db"></i>
+          </div>
+          <div class="mini-cart" onclick="openCartNav()">
+            <i class="fa-solid fa-cart-shopping" style="color: #e5e3db"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-body">
+      <div class="product-container">
+        <div class="product-image-container">
+          <div class="main-image-container">
+            <div class="display">
+              <img
+                src="logos/product-image-1.webp"
+                class="main-image"
+                id="display1"
+              />
+            </div>
+            <div class="list-product">
+              <div class="display">
+                <img
+                  src="logos/product-image-2.webp"
+                  class="main-image"
+                  id="display2"
+                />
+              </div>
+              <div class="display">
+                <img
+                  src="logos/product-image-3.webp"
+                  class="main-image"
+                  id="display3"
+                />
+              </div>
+              <div class="display">
+                <img
+                  src="logos/product-image-4.webp"
+                  class="main-image"
+                  id="display4"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="pop-up-image" id="popup-1">
+            <span class="close-popup">&times;</span>
+            <img src="logos/product-image-1.webp" class="pop-up-picture" />
+          </div>
+          <div class="pop-up-image" id="popup-2">
+            <span class="close-popup">&times;</span>
+            <img src="logos/product-image-2.webp" class="pop-up-picture" />
+          </div>
+          <div class="pop-up-image" id="popup-3">
+            <span class="close-popup">&times;</span>
+            <img src="logos/product-image-3.webp" class="pop-up-picture" />
+          </div>
+          <div class="pop-up-image" id="popup-4">
+            <span class="close-popup">&times;</span>
+            <img src="logos/product-image-4.webp" class="pop-up-picture" />
+          </div>
+          <div class="change-image-container-block">
+            <div class="change-image-container">
+              <img
+                src="logos/product-image-1.webp"
+                class="change-image"
+                onclick="currentSlide(1)"
+              />
+              <img
+                src="logos/product-image-2.webp"
+                class="change-image"
+                onclick="currentSlide(2)"
+              />
+              <img
+                src="logos/product-image-3.webp"
+                class="change-image"
+                onclick="currentSlide(3)"
+              />
+              <img
+                src="logos/product-image-4.webp"
+                class="change-image"
+                onclick="currentSlide(4)"
+              />
+            </div>
+          </div>
+          <script
+            type="text/javascript"
+            src="javascript/image-change.js"
+          ></script>
+        </div>
+        <div class="product-info-container">
+          <div class="product-info-header">Clear 2048 Purple Keycaps Set</div>
+          <div class="product-price">$ 60</div>
+          <div class="product-shipping">
+            German Sales Tax included. Sales Tax and
+            <span class="product-shipping-link">Shipping</span> will change
+            during Checkout depending on Country.
+          </div>
+          <div class="product-amount-container">
+            <div class="product-amount">
+              <div class="product-amount-minus" onclick="minusAmount()">-</div>
+              <input
+                type="text"
+                class="product-amount-text"
+                onfocusout="checkAmount()"
+              />
+              <div class="product-amount-plus" onclick="addAmount()">+</div>
+            </div>
+          </div>
+          <div class="add-to-cart-container">
+            <button class="custom-button" onclick="testAddToCart(0)">
+              ADD TO CART
+            </button>
+          </div>
+          <div class="product-main-info-container">
+            <div class="product-main-info-header">
+              Clear 2048 Purple Keycaps Set
+            </div>
+            <div class="product-main-info-body-header">Specifications:</div>
+            <div class="product-main-info-body">&#x2022; Profile: Cherry</div>
+            <div class="product-main-info-body">
+              &#x2022; Manufacturer: KBDfans
+            </div>
+            <div class="product-main-info-body">
+              &#x2022; Material: Transparent Polycarbonate
+            </div>
+            <div class="product-main-info-body">
+              &#x2022; Legends: UV printed with protective coating
+            </div>
+            <div class="product-main-info-body">
+              &#x2022; Packaging: ABS keycaps tray
+            </div>
+            <div class="product-main-info-body">
+              &#x2022; Compatible with Cherry MX switches and clones
+            </div>
+            <div class="product-main-info-body">&#x2022; Designer: BIIP</div>
+            <div class="product-main-info-body-disclaimer">Disclaimer:</div>
+            <div class="product-main-info-body-disclaimer-item">
+              1. Based on the hand printing method the legends might come with
+              legends shadow
+            </div>
+            <div class="product-main-info-body-disclaimer-item">
+              2. The font line would not be perfectly consistent
+            </div>
+            <div class="product-main-info-body-disclaimer-item">
+              3. The font alignment would not be perfectly even
+            </div>
+            <div class="product-main-info-body-disclaimer-item">
+              4. The icons would not be printed perfectly
+            </div>
+            <div class="product-main-info-body-disclaimer-item">
+              5. There are extra printing stains might exist inside the keycaps
+              (erasable by alcohol)
+            </div>
+            <div class="product-main-info-body-disclaimer-item">
+              6. Please check the pictures below before you make a purchase,
+              refund and return are acceptable within 7 days after receiving
+              your keycaps. (Customers have to bear with the shipping costs for
+              returns.)
+            </div>
+            <div class="product-main-info-body-disclaimer-footer">
+              This offer includes one set and no keyboard or cable.
+            </div>
+          </div>
+          <div class="share-container">
+            <div class="share-text">SHARE</div>
+            <img src="logos/facebook-logo.PNG.png" class="share-logo" />
+            <img src="logos/twitter-logo.png" class="share-logo" />
+            <img src="logos/insta-logo.png" class="share-logo" />
+          </div>
+        </div>
+      </div>
+      <div class="you-may-also-like-container">
+        <div class="main-header">YOU MAY ALSO LIKE</div>
+        <div class="you-may-also-like-grid">
+          <div class="you-may-also-like-item">
+            <div class="you-may-also-like-image-container">
+              <img
+                src="logos/you-may-also-like-image-1.webp"
+                class="you-may-also-like-image"
+              />
+            </div>
+            <div class="you-may-also-like-item-name">
+              QUARTZ STONE WRIST REST
+            </div>
+            <div class="you-may-also-like-item-price">$ 25</div>
+          </div>
+          <div class="you-may-also-like-item">
+            <div class="you-may-also-like-image-container">
+              <img
+                src="logos/you-may-also-like-image-2.webp"
+                class="you-may-also-like-image"
+              />
+            </div>
+            <div class="you-may-also-like-item-name">PBTfans™ Dolch</div>
+            <div class="you-may-also-like-item-price">from $ 18</div>
+          </div>
+          <div class="you-may-also-like-item">
+            <div class="you-may-also-like-image-container">
+              <img
+                src="logos/you-may-also-like-image-3.webp"
+                class="you-may-also-like-image"
+              />
+            </div>
+            <div class="you-may-also-like-item-name">
+              Gateron Oil King / 10pcs
+            </div>
+            <div class="you-may-also-like-item-price">$ 6,50</div>
+          </div>
+          <div class="you-may-also-like-item">
+            <div class="you-may-also-like-image-container">
+              <img
+                src="logos/you-may-also-like-image-4.webp"
+                class="you-may-also-like-image"
+              />
+            </div>
+            <div class="you-may-also-like-item-name">
+              Scanner Keycaps by MVKB
+            </div>
+            <div class="you-may-also-like-item-price">$ 65</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-item-container">
+        <div class="footer-menu">
+          <div class="footer-menu-header-text">FOOTER MENU</div>
+          <div class="footer-menu-body-text">Legal Notice</div>
+          <div class="footer-menu-body-text">Privacy Policy</div>
+          <div class="footer-menu-body-text">Refund policy</div>
+          <div class="footer-menu-body-text">Terms of Service</div>
+          <div class="footer-menu-body-text">Shipping Policy</div>
+        </div>
+        <div class="reviews">
+          <div class="footer-menu-header-text">REVIEWS</div>
+          <div class="footer-menu-body-text">Trustpilot</div>
+          <div class="footer-menu-body-text">Google</div>
+        </div>
+        <div class="social-media">
+          <div class="footer-menu-header-text">SOCIAL MEDIA</div>
+          <div class="footer-menu-body-text">Join our Discord Community!</div>
+          <div class="social-media-item">
+            <img src="logos/facebook-logo.PNG.png" class="facebook-logo" />
+            <img src="logos/twitter-logo.PNG" class="twitter-logo" />
+            <img src="logos/insta-logo.PNG" class="insta-logo" />
+          </div>
+        </div>
+        <div class="newsletter-section">
+          <div class="footer-menu-header-text">NEWSLETTER</div>
+          <div class="footer-menu-body-text">
+            Subscribe to our newsletter to be always up to date
+          </div>
+          <input
+            type="text"
+            class="email-input"
+            placeholder="Enter your email address"
+          />
+          <button class="custom-button">SUBSCRIBE</button>
+        </div>
+      </div>
+      <div class="footer-menu-trademark">© KEYGEM 2020-2023</div>
+      <div class="payment-container">
+        <img src="logos/payment.png" class="payment-method" />
+      </div>
+    </div>
+    <script type="text/javascript" src="javascript/product-general.js"></script>
+    <script type="text/javascript" src="javascript/shopping-cart.js"></script>
+  </body>
+</html>
